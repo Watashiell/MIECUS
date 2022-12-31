@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+ob_start();
 include("connection/connect.php");
 include_once 'product-action.php';
-error_reporting();
+error_reporting(0);
 session_start();
 
 
@@ -21,14 +22,17 @@ if (empty($_SESSION["user_id"])) {
 
 
     foreach ($_SESSION["cart_item"] as $item) {
-
+   
         $item_total += ($item["price"] * $item["quantity"]);
 
         if (isset($_POST['submit'])) {
 
-            $SQL = "insert into users_orders(u_id,title,quantity,price) values('" . $_SESSION["user_id"] . "','" . $item["title"] . "','" . $item["quantity"] . "','" . $item["price"] . "')";
-
-            mysqli_query($db, $SQL);
+         
+        $SQL = "INSERT INTO users_orders(u_id,title,quantity,price) VALUES('" . $_SESSION["user_id"] . "','" . $item["title"] . "','" . $item["quantity"] . "','" . $item["price"] . "')";
+        
+        
+        mysqli_query($db, $SQL);
+           
 
 
             unset($_SESSION["cart_item"]);
@@ -69,7 +73,7 @@ if (empty($_SESSION["user_id"])) {
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
                         data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/banner.png" alt="">
+                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/nav.png" alt="">
                     </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
