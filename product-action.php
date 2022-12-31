@@ -1,4 +1,5 @@
 <?php
+include("connection/connect.php");
 if(!empty($_GET["action"])) 
 {
 $productId = isset($_GET['id']) ? htmlspecialchars($_GET['id']) : '';
@@ -12,7 +13,7 @@ switch($_GET["action"])
 								$stmt->bind_param('i',$productId);
 								$stmt->execute();
 								$productDetails = $stmt->get_result()->fetch_object();
-                                $itemArray = array($productDetails->d_id=>array('title'=>$productDetails->title, 'd_id'=>$productDetails->d_id, 'quantity'=>$quantity, 'price'=>$productDetails->price));
+                $itemArray = array($productDetails->d_id=>array('title'=>$productDetails->title, 'd_id'=>$productDetails->d_id, 'quantity'=>$quantity, 'price'=>$productDetails->price));
 					if(!empty($_SESSION["cart_item"])) 
 					{
 						if(in_array($productDetails->d_id,array_keys($_SESSION["cart_item"]))) 
