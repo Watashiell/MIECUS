@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/login.css">
 
     <style type="text/css">
-        #buttn {
-            color: #fff;
-            background-color: #800000;
-        }
+    #buttn {
+        color: #fff;
+        background-color: #800000;
+    }
     </style>
 
 
@@ -36,7 +36,7 @@
             <div class="container">
                 <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
                     data-target="#mainNavbarCollapse">&#9776;</button>
-                <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/banner.png" alt=""> </a>
+                <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/nav.png" alt=""> </a>
                 <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span
@@ -51,7 +51,7 @@
                         } else {
 
 
-                            echo '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Pesananku</a> </li>';
+                            echo '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
                             echo '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
                         }
 
@@ -62,7 +62,7 @@
             </div>
         </nav>
     </header>
-    <div style=" background-image: url('images/img/banner.jpg');">
+    <div style=" background-image: url('images/img/bener.png');">
 
         <?php
         include("connection/connect.php");
