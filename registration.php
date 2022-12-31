@@ -69,13 +69,13 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <div style=" background-image: url('images/img/banner1.jpg');">
+    <div style=" background-image: url('images/img/bener.png');">
         <header id="header" class="header-scroll top-header headrom">
             <nav class="navbar navbar-dark">
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
                         data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/banner.png" alt="">
+                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/nav.png" alt="">
                     </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
                             } else {
 
 
-                                echo '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
+                                echo '<li class="nav-item"><a href="your_orders.php" class="nav-link active">Pesananku</a> </li>';
                                 echo '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
                             }
 
