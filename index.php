@@ -14,7 +14,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="#">
-    <title>MIESUH!</title>
+    <title>MIECUS!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animsition.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@ session_start();
             <div class="container">
                 <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse"
                     data-target="#mainNavbarCollapse">&#9776;</button>
-                <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/banner.png" alt=""> </a>
+                <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/nav.png" alt=""> </a>
                 <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                     <ul class="nav navbar-nav">
                         <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span
@@ -72,7 +72,7 @@ session_start();
 
     </header>
 
-    <section class="hero bg-image" data-image-src="images/img/banner1.jpg">
+    <section class="hero bg-image" data-image-src="images/img/bener.png">
         <div class="hero-inner">
             <div class="container text-center hero-text font-white">
                 <h1>Selamat Datang </h1>
