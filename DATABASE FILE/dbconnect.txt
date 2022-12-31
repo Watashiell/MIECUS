@@ -1,0 +1,4 @@
+dbname= id20050233_miesuh
+password= Andrafengxui69.
+user= id20050233_root
+Host= localhost
