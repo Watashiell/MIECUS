@@ -1,1 +1,1 @@
-Masukkan file mobileapps didalam web server 
+Masukkan folder mobileapps didalam web server 
